@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {  Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Movie } from './movie';
+import { environment } from '../../environments/environment';
 
 
 @Injectable({
@@ -11,7 +12,7 @@ import { Movie } from './movie';
 
 export class MovieService {
 
-  private apiURL = "http://localhost:8000/api/movies";
+  private apiURL = environment.apiEndpoint;
 
   httpOptions = {
     headers: new HttpHeaders({

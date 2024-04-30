@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    apiUrl: 'http://localhost:8000/api/movies'
+    apiEndpoint: 'http://localhost:8000/api/movies' || 'default'
 };
