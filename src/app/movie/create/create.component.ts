@@ -35,7 +35,9 @@ export class CreateComponent {
   ngOnInit(): void {
     this.form = new FormGroup({
       title: new FormControl('', [Validators.required]),
-      body: new FormControl('', Validators.required)
+      synopsis: new FormControl('', Validators.required),
+      year: new FormControl('', Validators.required),
+      cover: new FormControl('', Validators.required)
     });
   }
 
