@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiEndpoint: process.env["API_URL"] || 'default'
+    apiEndpoint: import.meta.env.NG_APP_API_URL || 'default'
 };

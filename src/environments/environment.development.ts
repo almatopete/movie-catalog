@@ -1,4 +1,5 @@
 export const environment = {
     production: false,
-    apiEndpoint: 'http://localhost:8000/api/movies' || 'default'
+    apiEndpoint: import.meta.env.NG_APP_API_URL || 'default'
 };
+
