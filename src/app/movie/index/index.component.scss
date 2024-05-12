@@ -1,6 +1,61 @@
 .container {
-    font-weight: bold;
     font-size: 15px;
-    color: darkblack;
-     
-}
+    color: #333; /* Dark color for text */
+  }
+  
+  /* Style for table header */
+  .table th {
+    font-weight: bold;
+    color: #555; /* Dark color for table header text */
+  }
+  
+  /* Style for table rows */
+  .table td {
+    vertical-align: middle; /* Align content vertically centered */
+  }
+  
+  /* Additional styling for buttons inside table cells */
+  .table a.btn,
+  .table button.btn {
+    font-size: 14px;
+  }
+
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .table td,
+    .table th {
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+  }
+  
+  /* Optional: Customize modal styles */
+.modal-dialog {
+    max-width: 500px; /* Adjust the maximum width of the modal */
+  }
+  
+  .modal-body {
+    font-size: 16px; /* Customize font size for modal body */
+  }
+
+  .backdrop{
+    background-color:rgba(0,0,0,0.6);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    }
+
+    /* Styles for the close button icon */
+.close-icon {
+    font-size: 1rem; /* Adjust the font size of the close icon */
+    color: #000; /* Set the color of the close icon */
+    opacity: 0.5; /* Set the initial opacity of the close icon */
+    transition: opacity 0.3s ease; /* Add a smooth transition for opacity changes */
+  }
+  
+  /* Hover effect for the close button icon */
+  .close:hover .close-icon {
+    opacity: 1; /* Increase opacity on hover to make the icon fully visible */
+  }
