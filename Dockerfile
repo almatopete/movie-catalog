@@ -5,7 +5,6 @@ FROM node:18-alpine
 WORKDIR /usr/src/app
 COPY . .
 RUN npm install
-RUN npm install npm@latest -g
 
 # Install angular
 RUN npm install -g @angular/cli
