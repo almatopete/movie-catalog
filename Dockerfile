@@ -14,4 +14,4 @@ RUN ng build --configuration=production
 
 CMD ["ng", "serve","--configuration=production", "--host", "0.0.0.0", "--disable-host-check"]
 
-EXPOSE 3000
+EXPOSE 4200
