@@ -5,12 +5,11 @@ FROM node:18-alpine
 WORKDIR /usr/src/app
 COPY . .
 RUN npm install
-RUN npm install -g gatsby-cli
+RUN npm install npm@latest -g
 
-RUN gatsby build
+# Install angular
+RUN npm install -g @angular/cli
 
-RUN npm install --global serve
-
-CMD serve /usr/src/app/public
+CMD ["ng", "start", "--host", "0.0.0.0", "--disable-host-check"]
 
 EXPOSE 3000
